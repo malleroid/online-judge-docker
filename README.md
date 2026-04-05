@@ -10,6 +10,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 
 | Language | Image |
 |---|---|
+| Go (go 1.25.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-go:2025.10` |
 | Rust (rustc 1.89.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-rust:2025.10` |
 
 > More languages coming soon (C++, Python, PyPy, Ruby, ...).
@@ -20,6 +21,11 @@ Add a `compose.yaml` to your solutions repository:
 
 ```yaml
 services:
+  go:
+    image: ghcr.io/malleroid/online-judge-docker/atcoder-go:2025.10
+    volumes:
+      - ./main.go:/judge/main.go
+    working_dir: /judge
   rust:
     image: ghcr.io/malleroid/online-judge-docker/atcoder-rust:2025.10
     volumes:
@@ -28,10 +34,18 @@ services:
 ```
 
 ```bash
-# Compile and run
+# Go
+docker compose run --rm go go build -o a.out && docker compose run --rm go ./a.out
+
+# Rust
 docker compose run --rm rust cargo build --release --quiet --offline
 docker compose run --rm rust ./target/release/main < input.txt
 ```
+
+### Go notes
+
+- 6 libraries pre-installed (gods, gonum, gostl, immutable, x/exp, ac-library-go)
+- `go.mod` and `go.sum` are pre-configured in `/judge`
 
 ### Rust notes
 
