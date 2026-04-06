@@ -16,6 +16,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Go (go 1.25.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-go:2025.10` |
 | JavaScript (Node.js 22.19.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-nodejs:2025.10` |
 | Rust (rustc 1.89.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-rust:2025.10` |
+| Text (cat 9.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-text:2025.10` |
 | Zig (Zig 0.15.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-zig:2025.10` |
 
 > More languages coming soon (C++, Python, PyPy, Ruby, ...).
