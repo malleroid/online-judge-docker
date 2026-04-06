@@ -11,6 +11,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Language | Image |
 |---|---|
 | Go (go 1.25.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-go:2025.10` |
+| JavaScript (Node.js 22.19.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-nodejs:2025.10` |
 | Rust (rustc 1.89.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-rust:2025.10` |
 | Zig (Zig 0.15.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-zig:2025.10` |
 
@@ -48,6 +49,11 @@ docker compose run --rm rust ./target/release/main < input.txt
 - 4 libraries pre-installed (ac-library-zig, proconio-zig, zig-string, mvzr)
 - Build with `zig build --release -Doptimize=ReleaseFast`, output at `zig-out/bin/judge`
 - `build.zig` and `build.zig.zon` are pre-configured in `/judge`
+
+### Node.js notes
+
+- 6 npm libraries pre-installed globally (ac-library-js, data-structure-typed, immutable, lodash, mathjs, tstl)
+- `node.sh` wrapper script limits stack size based on problem memory limit
 
 ### Go notes
 
