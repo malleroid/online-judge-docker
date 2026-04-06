@@ -12,6 +12,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 |---|---|
 | Go (go 1.25.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-go:2025.10` |
 | Rust (rustc 1.89.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-rust:2025.10` |
+| Zig (Zig 0.15.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-zig:2025.10` |
 
 > More languages coming soon (C++, Python, PyPy, Ruby, ...).
 
@@ -41,6 +42,12 @@ docker compose run --rm go go build -o a.out && docker compose run --rm go ./a.o
 docker compose run --rm rust cargo build --release --quiet --offline
 docker compose run --rm rust ./target/release/main < input.txt
 ```
+
+### Zig notes
+
+- 4 libraries pre-installed (ac-library-zig, proconio-zig, zig-string, mvzr)
+- Build with `zig build --release -Doptimize=ReleaseFast`, output at `zig-out/bin/judge`
+- `build.zig` and `build.zig.zon` are pre-configured in `/judge`
 
 ### Go notes
 
