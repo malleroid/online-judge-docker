@@ -23,6 +23,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | JavaScript (Deno 2.4.5) | `ghcr.io/malleroid/online-judge-docker/atcoder-deno:2025.10` |
 | Go (go 1.25.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-go:2025.10` |
 | JavaScript (Node.js 22.19.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-nodejs:2025.10` |
+| Octave (GNU Octave 10.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-octave:2025.10` |
 | Perl (perl 5.38.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-perl:2025.10` |
 | Prolog (SWI-Prolog 9.2.9) | `ghcr.io/malleroid/online-judge-docker/atcoder-prolog:2025.10` |
 | Rust (rustc 1.89.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-rust:2025.10` |
