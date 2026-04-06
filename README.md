@@ -31,6 +31,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Tcl (tclsh 9.0.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-tcl:2025.10` |
 | TeX (tex 3.141592653) | `ghcr.io/malleroid/online-judge-docker/atcoder-tex:2025.10` |
 | Text (cat 9.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-text:2025.10` |
+| TypeScript 5.9 (tsc 5.9.2 (Bun 1.2.21)) | `ghcr.io/malleroid/online-judge-docker/atcoder-typescript-bun:2025.10` |
 | TypeScript 5.9 (tsc 5.9.2 (Node.js 22.19.0)) | `ghcr.io/malleroid/online-judge-docker/atcoder-typescript-nodejs:2025.10` |
 | Zig (Zig 0.15.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-zig:2025.10` |
 
