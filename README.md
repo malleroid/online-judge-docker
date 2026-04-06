@@ -24,6 +24,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Perl (perl 5.38.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-perl:2025.10` |
 | Prolog (SWI-Prolog 9.2.9) | `ghcr.io/malleroid/online-judge-docker/atcoder-prolog:2025.10` |
 | Rust (rustc 1.89.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-rust:2025.10` |
+| SQL (DuckDB 1.3.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-sql:2025.10` |
 | Tcl (tclsh 9.0.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-tcl:2025.10` |
 | TeX (tex 3.141592653) | `ghcr.io/malleroid/online-judge-docker/atcoder-tex:2025.10` |
 | Text (cat 9.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-text:2025.10` |
