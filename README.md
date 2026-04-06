@@ -13,6 +13,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | AWK (GNU awk 5.2.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-awk:2025.10` |
 | Bash (bash 5.3) | `ghcr.io/malleroid/online-judge-docker/atcoder-bash:2025.10` |
 | bc (GNU bc 1.08.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-bc:2025.10` |
+| COBOL (Free) (GnuCOBOL 3.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-cobol:2025.10` |
 | Dart (Dart 3.9.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-dart:2025.10` |
 | dc 1.5.2 (GNU bc 1.08.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-dc:2025.10` |
 | Fish (fish 4.0.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-fish:2025.10` |
