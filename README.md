@@ -14,6 +14,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Bash (bash 5.3) | `ghcr.io/malleroid/online-judge-docker/atcoder-bash:2025.10` |
 | Dart (Dart 3.9.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-dart:2025.10` |
 | JavaScript (Bun 1.2.21) | `ghcr.io/malleroid/online-judge-docker/atcoder-bun:2025.10` |
+| Julia (Julia 1.11.6) | `ghcr.io/malleroid/online-judge-docker/atcoder-julia:2025.10` |
 | JavaScript (Deno 2.4.5) | `ghcr.io/malleroid/online-judge-docker/atcoder-deno:2025.10` |
 | Go (go 1.25.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-go:2025.10` |
 | JavaScript (Node.js 22.19.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-nodejs:2025.10` |
