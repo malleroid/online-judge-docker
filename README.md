@@ -26,6 +26,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Haskell (GHC 9.8.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-haskell:2025.10` |
 | Java24 (OpenJDK 24.0.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-java:2025.10` |
 | JavaScript (Node.js 22.19.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-nodejs:2025.10` |
+| Koka (koka v3.2.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-koka:2025.10` |
 | Kotlin (Kotlin/JVM 2.2.10) | `ghcr.io/malleroid/online-judge-docker/atcoder-kotlin:2025.10` |
 | Lean (lean v4.22.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-lean:2025.10` |
 | Octave (GNU Octave 10.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-octave:2025.10` |
