@@ -1,0 +1,16 @@
+dependencies:
+  atcoder:
+    github: hakatashi/ac-library.cr
+    commit: "c57c18d"
+  avltree:
+    github: ngng628/avltree
+    version: "0.1.2"
+  graphlb:
+    github: mettuaditya/graphlb
+    version: "0.1.0"
+  gsl:
+    github: konovod/crystal-gsl
+    commit: "b1fc1b0"
+  immutable:
+    github: lucaong/immutable
+    version: "0.1.24"
