@@ -29,6 +29,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Koka (koka v3.2.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-koka:2025.10` |
 | Kotlin (Kotlin/JVM 2.2.10) | `ghcr.io/malleroid/online-judge-docker/atcoder-kotlin:2025.10` |
 | Lean (lean v4.22.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-lean:2025.10` |
+| Nim (Nim 1.6.20) | `ghcr.io/malleroid/online-judge-docker/atcoder-nim1:2025.10` |
 | Nim (Nim 2.2.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-nim2:2025.10` |
 | Octave (GNU Octave 10.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-octave:2025.10` |
 | PowerShell (PowerShell 7.5.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-powershell:2025.10` |
