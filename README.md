@@ -34,6 +34,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Octave (GNU Octave 10.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-octave:2025.10` |
 | PowerShell (PowerShell 7.5.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-powershell:2025.10` |
 | Perl (perl 5.38.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-perl:2025.10` |
+| PHP (PHP 8.4.12) | `ghcr.io/malleroid/online-judge-docker/atcoder-php:2025.10` |
 | Prolog (SWI-Prolog 9.2.9) | `ghcr.io/malleroid/online-judge-docker/atcoder-prolog:2025.10` |
 | Rust (rustc 1.89.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-rust:2025.10` |
 | SQL (DuckDB 1.3.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-sql:2025.10` |
