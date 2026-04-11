@@ -19,6 +19,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Crystal (Crystal 1.17.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-crystal:2025.10` |
 | Dart (Dart 3.9.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-dart:2025.10` |
 | dc 1.5.2 (GNU bc 1.08.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-dc:2025.10` |
+| F# 9.0 (.NET 9.0.8) | `ghcr.io/malleroid/online-judge-docker/atcoder-fsharp:2025.10` |
 | Fish (fish 4.0.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-fish:2025.10` |
 | Forth (gforth 0.7.3) | `ghcr.io/malleroid/online-judge-docker/atcoder-forth:2025.10` |
 | JavaScript (Bun 1.2.21) | `ghcr.io/malleroid/online-judge-docker/atcoder-bun:2025.10` |
