@@ -17,7 +17,10 @@ ENV NO_COLOR=1
 ENV DENO_NO_UPDATE_CHECK=1
 ENV PATH="/root/.deno/bin:${PATH}"
 
-# Setup project and install packages (same as JS Deno + @types/lodash)
+# Setup project and install packages (same as JS Deno + @types/lodash + @types/node)
+# Note: TOML does not include @types/node in deno add, but caches it implicitly
+# via deno check on test code with /// <reference types="npm:@types/node" />.
+# We add it explicitly to ensure it is pre-cached in the image.
 RUN echo '{ "imports": {} }' > deno.json \
     && deno add \
         jsr:@std/assert@1.0.14 \
@@ -62,6 +65,7 @@ RUN echo '{ "imports": {} }' > deno.json \
         jsr:@std/webgpu@0.224.8 \
         jsr:@std/yaml@1.0.9 \
         npm:@types/lodash@4.17.20 \
+        npm:@types/node@24.2.0 \
         npm:ac-library-js@0.1.1 \
         npm:data-structure-typed@2.0.4 \
         npm:immutable@5.1.3 \
