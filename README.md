@@ -28,6 +28,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | F# 9.0 (.NET 9.0.8) | `ghcr.io/malleroid/online-judge-docker/atcoder-fsharp:2025.10` |
 | Fish (fish 4.0.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-fish:2025.10` |
 | Forth (gforth 0.7.3) | `ghcr.io/malleroid/online-judge-docker/atcoder-forth:2025.10` |
+| Gleam (Gleam 1.12.0 (OTP 28.0.2)) | `ghcr.io/malleroid/online-judge-docker/atcoder-gleam:2025.10` |
 | JavaScript (Bun 1.2.21) | `ghcr.io/malleroid/online-judge-docker/atcoder-bun:2025.10` |
 | Julia (Julia 1.11.6) | `ghcr.io/malleroid/online-judge-docker/atcoder-julia:2025.10` |
 | JavaScript (Deno 2.4.5) | `ghcr.io/malleroid/online-judge-docker/atcoder-deno:2025.10` |
