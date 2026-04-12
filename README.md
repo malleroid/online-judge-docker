@@ -47,6 +47,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Lua (LuaJIT 2.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-luajit:2025.10` |
 | Nim (Nim 1.6.20) | `ghcr.io/malleroid/online-judge-docker/atcoder-nim1:2025.10` |
 | Nim (Nim 2.2.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-nim2:2025.10` |
+| OCaml (ocamlopt 5.3.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-ocaml:2025.10` |
 | Octave (GNU Octave 10.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-octave:2025.10` |
 | PowerShell (PowerShell 7.5.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-powershell:2025.10` |
 | Perl (perl 5.38.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-perl:2025.10` |
