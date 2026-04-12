@@ -7,7 +7,7 @@ WORKDIR /judge
 
 # Install build dependencies
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends build-essential ca-certificates curl zlib1g zlib1g-dev \
+    && apt-get install -y --no-install-recommends build-essential ca-certificates curl zip zlib1g zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Build and install Tcl from source
