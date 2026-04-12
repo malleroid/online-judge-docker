@@ -1,0 +1,4 @@
+{:paths ["."]
+ :deps {org.clojure/clojure {:mvn/version "1.12.2"}}
+ :aliases {:ac {:extra-paths ["lib"]
+               :extra-deps {local/ac_library {:local/root "lib/ac_library.jar"}}}}}
