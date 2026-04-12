@@ -22,6 +22,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | COBOL (Free) (GnuCOBOL 3.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-cobol:2025.10` |
 | Crystal (Crystal 1.17.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-crystal:2025.10` |
 | D (DMD 2.111.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-dmd:2025.10` |
+| D (GDC 15.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-gdc:2025.10` |
 | D (LDC 1.41.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-ldc:2025.10` |
 | Dart (Dart 3.9.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-dart:2025.10` |
 | Elixir (Elixir 1.18.4 (OTP 28.0.2)) | `ghcr.io/malleroid/online-judge-docker/atcoder-elixir:2025.10` |
