@@ -1,0 +1,46 @@
+FROM ubuntu:24.04@sha256:186072bba1b2f436cbb91ef2567abca677337cfc786c86e107d25b7072feef0c
+
+ARG DMD_VERSION=dmd-2.111.0
+
+# DMD only provides x86_64 binaries; runs under QEMU on arm64
+# Build with: docker build --platform linux/amd64
+
+ENV HOME=/root
+
+WORKDIR /judge
+
+# Install dependencies
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends build-essential ca-certificates curl libxml2 wget \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install DMD via dlang.org install script
+RUN wget -q https://dlang.org/install.sh -O /tmp/install.sh \
+    && chmod +x /tmp/install.sh \
+    && /tmp/install.sh install ${DMD_VERSION} \
+    && ln -s $(/tmp/install.sh get-path ${DMD_VERSION}) /usr/local/bin/dmd \
+    && ln -s $(/tmp/install.sh get-path --dub ${DMD_VERSION}) /usr/local/bin/dub
+
+# Initialize dub project and fetch dependencies
+# Note: dub build fails under QEMU (D runtime fork+exec issue),
+# so we fetch deps and do a manual dmd compile for pre-build cache
+RUN dub init -n \
+    && dub add mir@3.2.3 \
+    && for pkg in mir mir-random mir-core mir-linux-kernel mir-algorithm; do \
+        dub fetch "$pkg" 2>&1; \
+    done
+
+# Pre-build with manual dmd to verify compilation works
+RUN SOURCES=""; \
+    for dir in /root/.dub/packages/*/; do \
+        for subdir in "$dir"/*/; do \
+            for pkgdir in "$subdir"/*/; do \
+                if [ -d "${pkgdir}source" ]; then \
+                    SOURCES="$SOURCES -I${pkgdir}source"; \
+                fi; \
+            done; \
+        done; \
+    done; \
+    echo "void main(){}" > source/app.d \
+    && dmd source/app.d -of=judge $SOURCES \
+    && rm judge source/app.d
