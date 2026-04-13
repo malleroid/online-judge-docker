@@ -20,6 +20,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Clojure (Clojure AOT 1.12.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-clojure-aot:2025.10` |
 | Clojure (ClojureScript 1.12.42) | `ghcr.io/malleroid/online-judge-docker/atcoder-clojurescript:2025.10` |
 | COBOL (Free) (GnuCOBOL 3.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-cobol:2025.10` |
+| Common Lisp (SBCL 2.5.8) | `ghcr.io/malleroid/online-judge-docker/atcoder-sbcl:2025.10` |
 | Crystal (Crystal 1.17.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-crystal:2025.10` |
 | D (DMD 2.111.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-dmd:2025.10` |
 | D (GDC 15.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-gdc:2025.10` |
