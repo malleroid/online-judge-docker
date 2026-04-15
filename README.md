@@ -55,6 +55,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | PHP (PHP 8.4.12) | `ghcr.io/malleroid/online-judge-docker/atcoder-php:2025.10` |
 | Prolog (SWI-Prolog 9.2.9) | `ghcr.io/malleroid/online-judge-docker/atcoder-prolog:2025.10` |
 | R (GNU R 4.5.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-r:2025.10` |
+| ReasonML (reson 3.16.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-reasonml:2025.10` |
 | Scala (Dotty 3.7.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-scala:2025.10` |
 | Scheme (ChezScheme 10.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-chezscheme:2025.10` |
 | Scheme (Gauche 0.9.15) | `ghcr.io/malleroid/online-judge-docker/atcoder-gauche:2025.10` |
