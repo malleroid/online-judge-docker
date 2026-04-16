@@ -7,7 +7,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/apple/swift-collections", exact: "1.2.1"),
         .package(url: "https://github.com/apple/swift-algorithms", exact: "1.2.1"),
-        .package(url: "https://github.com/apple/swift-numerics", exact: "1.1.0"),
+        .package(url: "https://github.com/apple/swift-numerics", exact: "1.1.1"),
         .package(url: "https://github.com/attaswift/BigInt", exact: "5.7.0"),
         .package(url: "https://github.com/dankogai/swift-bignum",
                  revision: "a562275f0a64bc95f6e3f6c45ee652eefa820749"),
