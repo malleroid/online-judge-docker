@@ -4,15 +4,15 @@
     "net9.0": {
       "ac-library-csharp": {
         "type": "Direct",
-        "requested": "[3.9.2-atcoder1, )",
-        "resolved": "3.9.2-atcoder1",
-        "contentHash": "pDKLPopUWCSxZsqKjHNhuzC7xzJSfSRpyJoYb310izympE3J66QWf54JikiWEzDR4tBzL2tKf0r9fdBWKcovoQ=="
+        "requested": "[3.9.2, )",
+        "resolved": "3.9.2",
+        "contentHash": "fpLbvRsQvu+eUOxpLgiuqHXE89W6xmQRom2dvNsw4v90GY+VO55E0/njyF9QS0PQzw11D2xJTpronWMTl43/xQ=="
       },
       "FSharp.Core": {
         "type": "Direct",
-        "requested": "[9.0.303, )",
-        "resolved": "9.0.303",
-        "contentHash": "6JlV8aD8qQvcmfoe/PMOxCHXc0uX4lR23u0fAyQtnVQxYULLoTZgwgZHSnRcuUHOvS3wULFWcwdnP1iwslH60g=="
+        "requested": "[10.1.202, )",
+        "resolved": "10.1.202",
+        "contentHash": "DoxwjHNboZwevBRVeUw0k0dQVn6w3ne46PBYAntx0Yzea8Aaa5W232IZWrei8c3N6vftCQ1VdTCxil/FVeuWow=="
       },
       "FSharpPlus": {
         "type": "Direct",

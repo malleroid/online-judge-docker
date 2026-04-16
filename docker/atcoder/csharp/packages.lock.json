@@ -4,9 +4,9 @@
     "net9.0": {
       "ac-library-csharp": {
         "type": "Direct",
-        "requested": "[3.9.2-atcoder1, )",
-        "resolved": "3.9.2-atcoder1",
-        "contentHash": "pDKLPopUWCSxZsqKjHNhuzC7xzJSfSRpyJoYb310izympE3J66QWf54JikiWEzDR4tBzL2tKf0r9fdBWKcovoQ=="
+        "requested": "[3.9.2, )",
+        "resolved": "3.9.2",
+        "contentHash": "fpLbvRsQvu+eUOxpLgiuqHXE89W6xmQRom2dvNsw4v90GY+VO55E0/njyF9QS0PQzw11D2xJTpronWMTl43/xQ=="
       },
       "MathNet.Numerics": {
         "type": "Direct",

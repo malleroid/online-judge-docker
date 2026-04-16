@@ -14,7 +14,7 @@
     <RestoreLockedMode>true</RestoreLockedMode>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ac-library-csharp" Version="3.9.2-atcoder1" />
+    <PackageReference Include="ac-library-csharp" Version="3.9.2" />
     <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
     <PackageReference Include="Microsoft.ML" Version="4.0.2" />
     <PackageReference Include="Microsoft.ML.LightGbm" Version="4.0.2" />

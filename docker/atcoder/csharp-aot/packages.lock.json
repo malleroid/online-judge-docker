@@ -4,9 +4,9 @@
     "net9.0": {
       "ac-library-csharp": {
         "type": "Direct",
-        "requested": "[3.9.2-atcoder1, )",
-        "resolved": "3.9.2-atcoder1",
-        "contentHash": "pDKLPopUWCSxZsqKjHNhuzC7xzJSfSRpyJoYb310izympE3J66QWf54JikiWEzDR4tBzL2tKf0r9fdBWKcovoQ=="
+        "requested": "[3.9.2, )",
+        "resolved": "3.9.2",
+        "contentHash": "fpLbvRsQvu+eUOxpLgiuqHXE89W6xmQRom2dvNsw4v90GY+VO55E0/njyF9QS0PQzw11D2xJTpronWMTl43/xQ=="
       },
       "MathNet.Numerics": {
         "type": "Direct",
@@ -16,31 +16,31 @@
       },
       "Microsoft.DotNet.ILCompiler": {
         "type": "Direct",
-        "requested": "[9.0.8, )",
-        "resolved": "9.0.8",
-        "contentHash": "cMwVh5hsxAhv+oMHQdgcXodt2kDpfviofBO4IXupSAHJW2vZOZOOIhvPWRGO6NeGcP8SR4OpSwktRqb0i79KFA=="
+        "requested": "[9.0.15, )",
+        "resolved": "9.0.15",
+        "contentHash": "pd1ojloB2mbVckRjSoqzdellgNLSH/l6s9xstD2C9cIbux2RpYuICewKIWL5R7hlKMm8yGKUDOKsLaV/n/1l+Q=="
       },
       "Microsoft.NET.ILLink.Tasks": {
         "type": "Direct",
-        "requested": "[9.0.8, )",
-        "resolved": "9.0.8",
-        "contentHash": "rd1CbIsMtVPtZNTIVD6Xydue//klYOOQIDpRgu3BHtv17AlpRs74/6QFbcYgMm/jL+naVU2T3OFLxVSLV5lQLQ=="
+        "requested": "[9.0.15, )",
+        "resolved": "9.0.15",
+        "contentHash": "EejcbfCMR77Dthy77qxRbEShmzLApHZUPqXMBVQK+A0pNrRThkaHoGGMGvbq/gTkC/waKcDEgjBkbaejB58Wtw=="
       }
     },
     "net9.0/linux-x64": {
       "Microsoft.DotNet.ILCompiler": {
         "type": "Direct",
-        "requested": "[9.0.8, )",
-        "resolved": "9.0.8",
-        "contentHash": "cMwVh5hsxAhv+oMHQdgcXodt2kDpfviofBO4IXupSAHJW2vZOZOOIhvPWRGO6NeGcP8SR4OpSwktRqb0i79KFA==",
+        "requested": "[9.0.15, )",
+        "resolved": "9.0.15",
+        "contentHash": "pd1ojloB2mbVckRjSoqzdellgNLSH/l6s9xstD2C9cIbux2RpYuICewKIWL5R7hlKMm8yGKUDOKsLaV/n/1l+Q==",
         "dependencies": {
-          "runtime.linux-x64.Microsoft.DotNet.ILCompiler": "9.0.8"
+          "runtime.linux-x64.Microsoft.DotNet.ILCompiler": "9.0.15"
         }
       },
       "runtime.linux-x64.Microsoft.DotNet.ILCompiler": {
         "type": "Transitive",
-        "resolved": "9.0.8",
-        "contentHash": "odpM8kiUn/QLIGzsPIMTgPb+Q99rKGtaDQe6yHE9/KtawL3XtIWejjg5NWktIlZ/jlSIvIUDI5NWI+rg4aQcNw=="
+        "resolved": "9.0.15",
+        "contentHash": "8YiWAdav72p5OdUJWesUtjvrFzKKKTTWqwA3TdzwuopkvTogxlabCSoySNWwrxivw5VfIu8TIOPBqIFBSm8Ytw=="
       }
     }
   }
