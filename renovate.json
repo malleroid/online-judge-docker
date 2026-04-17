@@ -5,7 +5,19 @@
   "labels": ["dependencies"],
   "timezone": "Asia/Tokyo",
   "vulnerabilityAlerts": {
-    "enabled": true,
-    "labels": ["dependencies", "security"]
-  }
+    "enabled": false
+  },
+  "packageRules": [
+    {
+      "description": "AtCoder judge env deps are pinned; update manually when judge env updates",
+      "matchFileNames": ["docker/atcoder/**"],
+      "enabled": false
+    },
+    {
+      "description": "Dockerfile base image digests still auto-update for security",
+      "matchFileNames": ["docker/atcoder/**/Dockerfile"],
+      "matchManagers": ["dockerfile"],
+      "enabled": true
+    }
+  ]
 }
