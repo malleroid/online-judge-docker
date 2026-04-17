@@ -31,7 +31,7 @@ indexing = { version = "=0.4.1", features = ["experimental_pointer_ranges"] }
 amplify = { version = "=4.9.0", features = ["c_raw", "rand", "stringly_conversions"] }
 amplify_derive = "=4.0.1"
 amplify_num = { version = "=0.5.3", features = ["std"] }
-easy-ext = "=1.0.2"
+easy-ext = "=1.0.3"
 multimap = "=0.10.1"
 btreemultimap = "=0.1.1"
 bstr = "=1.12.0"
