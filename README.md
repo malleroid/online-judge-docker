@@ -75,6 +75,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | TypeScript 5.9 (tsc 5.9.2 (Bun 1.2.21)) | `ghcr.io/malleroid/online-judge-docker/atcoder-typescript-bun:2025.10` |
 | TypeScript 5.9 (tsc 5.9.2 (Node.js 22.19.0)) | `ghcr.io/malleroid/online-judge-docker/atcoder-typescript-nodejs:2025.10` |
 | V (0.4.10) | `ghcr.io/malleroid/online-judge-docker/atcoder-v:2025.10` |
+| Verilog 2012 (Icarus Verilog 12.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-verilog:2025.10` |
 | Zig (Zig 0.15.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-zig:2025.10` |
 
 > More languages coming soon (C++, Python, PyPy, Ruby, ...).
