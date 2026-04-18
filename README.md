@@ -10,6 +10,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 
 | Language | Image |
 |---|---|
+| Assembly MIPS O32 ABI (GNU assembler 2.42) | `ghcr.io/malleroid/online-judge-docker/atcoder-asm-mips:2025.10` |
 | Assembly x64 (NASM 2.16.03) | `ghcr.io/malleroid/online-judge-docker/atcoder-nasm:2025.10` |
 | AWK (GNU awk 5.2.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-awk:2025.10` |
 | Bash (bash 5.3) | `ghcr.io/malleroid/online-judge-docker/atcoder-bash:2025.10` |
