@@ -1,37 +1,50 @@
 FROM ubuntu:24.04@sha256:186072bba1b2f436cbb91ef2567abca677337cfc786c86e107d25b7072feef0c
 
 ARG SCALA_VERSION=3.7.2
+ARG SCALA_CLI_VERSION=1.9.1
+ARG SBT_VERSION=1.11.7
 ARG ACLIB_COMMIT=050a967
 
-# scala-cli apt package is amd64 only; no arm64 support
-# Build with: docker build --platform linux/amd64
+ARG SCALA_CLI_AMD64_SHA256=fabe7085ccbdab9fd61559a3f6ff4cf5dcfe6aed72b362f2ffa4921c6119b21d
+ARG SCALA_CLI_ARM64_SHA256=bf78b11d82d1eb31883c8bbe9af4539f7ad1f1503aa65569b25bad51c4f4f8d3
+ARG SBT_SHA256=1232818f91c39639a93bbe1108e12d94c7044a646a7847f1a3977b9e46716cd6
 
 WORKDIR /judge
 
-# Add scala-cli and sbt repositories
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends apt-transport-https ca-certificates curl gnupg wget \
-    && curl -sS "https://virtuslab.github.io/scala-cli-packages/KEY.gpg" \
-        | gpg --dearmor -o /etc/apt/trusted.gpg.d/scala-cli.gpg 2>/dev/null \
-    && curl -s --compressed -o /etc/apt/sources.list.d/scala_cli_packages.list \
-        "https://virtuslab.github.io/scala-cli-packages/debian/scala_cli_packages.list" \
-    && echo "deb https://repo.scala-sbt.org/scalasbt/debian all main" > /etc/apt/sources.list.d/sbt.list \
-    && echo "deb https://repo.scala-sbt.org/scalasbt/debian /" > /etc/apt/sources.list.d/sbt_old.list \
-    && curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" \
-        | gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/scalasbt-release.gpg --import \
-    && chmod 644 /etc/apt/trusted.gpg.d/scalasbt-release.gpg \
-    && apt-get update \
-    && apt-get install -y --no-install-recommends ansifilter openjdk-21-jdk-headless sbt scala-cli \
+    && apt-get install -y --no-install-recommends \
+        ansifilter \
+        ca-certificates \
+        curl \
+        openjdk-21-jdk-headless \
     && rm -rf /var/lib/apt/lists/*
 
-# Build ac-library-scala from source
-RUN wget -q -O /tmp/ac-library.tar.gz \
+RUN arch="$(dpkg --print-architecture)" \
+    && case "$arch" in \
+         amd64) asset="scala-cli-x86_64-pc-linux-static.gz"; expected="${SCALA_CLI_AMD64_SHA256}" ;; \
+         arm64) asset="scala-cli-aarch64-pc-linux.gz";        expected="${SCALA_CLI_ARM64_SHA256}" ;; \
+         *) echo "Unsupported architecture: $arch" >&2; exit 1 ;; \
+       esac \
+    && curl -fsSL -o /tmp/scala-cli.gz \
+        "https://github.com/VirtusLab/scala-cli/releases/download/v${SCALA_CLI_VERSION}/${asset}" \
+    && echo "${expected}  /tmp/scala-cli.gz" | sha256sum -c - \
+    && gunzip -c /tmp/scala-cli.gz > /usr/local/bin/scala-cli \
+    && chmod +x /usr/local/bin/scala-cli \
+    && rm /tmp/scala-cli.gz
+
+RUN curl -fsSL -o /tmp/sbt.tgz \
+        "https://github.com/sbt/sbt/releases/download/v${SBT_VERSION}/sbt-${SBT_VERSION}.tgz" \
+    && echo "${SBT_SHA256}  /tmp/sbt.tgz" | sha256sum -c - \
+    && tar -C /opt -xzf /tmp/sbt.tgz \
+    && ln -s /opt/sbt/bin/sbt /usr/local/bin/sbt \
+    && rm /tmp/sbt.tgz
+
+RUN curl -fsSL -o /tmp/ac-library.tar.gz \
         "https://github.com/harry0000/ac-library-scala/archive/${ACLIB_COMMIT}.tar.gz" \
     && mkdir /tmp/ac-library \
     && tar -C /tmp/ac-library --strip-components=1 -xf /tmp/ac-library.tar.gz \
     && cd /tmp/ac-library \
-    && AC_SBT_VERSION="$(dpkg-query -W -f='${Version}' sbt)" \
-    && printf "sbt.version = %s\n" "$AC_SBT_VERSION" > project/build.properties \
+    && printf "sbt.version = %s\n" "${SBT_VERSION}" > project/build.properties \
     && sed -i "s/.*lazy val supportedScalaVersions.*/lazy val supportedScalaVersions = List(\"${SCALA_VERSION}\")/" build.sbt \
     && sbt package \
     && cd /judge \
@@ -39,10 +52,8 @@ RUN wget -q -O /tmp/ac-library.tar.gz \
     && cp /tmp/ac-library/target/scala-${SCALA_VERSION}/ac-library-scala_3-0.1.0-SNAPSHOT.jar lib/ac-library.jar \
     && rm -rf /tmp/ac-library*
 
-# Pre-build with dummy source
 RUN printf '//> using file "lib/ac-library.jar"\nobject Main { def main(args: Array[String]): Unit = println("Hello") }\n' > Main.scala \
     && scala-cli --power package --bloop-jvm system --jvm system -S ${SCALA_VERSION} Main.scala -o Main --assembly --quiet \
     && rm Main Main.scala
 
-# Copy execution wrapper script
 COPY scala.sh scala.sh
