@@ -29,6 +29,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | COBOL (Free) (GnuCOBOL 3.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-cobol:2025.10` |
 | Common Lisp (SBCL 2.5.8) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-sbcl:2025.10` |
 | Crystal (Crystal 1.17.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-crystal:2025.10` |
+| Cyber (Cyber v0.3) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-cyber:2025.10` |
 | D (DMD 2.111.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-dmd:2025.10` |
 | D (GDC 15.2) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-gdc:2025.10` |
 | D (LDC 1.41.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-ldc:2025.10` |
