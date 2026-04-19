@@ -52,6 +52,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Go (go 1.25.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-go:2025.10` |
 | Haskell (GHC 9.8.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-haskell:2025.10` |
 | Haxe/JVM 4.3.7 (hxjava 4.2.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-haxe:2025.10` |
+| ISLisp (Easy-ISLisp 5.43) | `ghcr.io/malleroid/online-judge-docker/atcoder-eisl:2025.10` |
 | Java24 (OpenJDK 24.0.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-java:2025.10` |
 | JavaScript (Node.js 22.19.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-nodejs:2025.10` |
 | Koka (koka v3.2.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-koka:2025.10` |
