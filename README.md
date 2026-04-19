@@ -50,6 +50,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | JavaScript (Node.js 22.19.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-nodejs:2025.10` |
 | Koka (koka v3.2.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-koka:2025.10` |
 | Kotlin (Kotlin/JVM 2.2.10) | `ghcr.io/malleroid/online-judge-docker/atcoder-kotlin:2025.10` |
+| Lazy K (irori v1.0.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-lazyk:2025.10` |
 | Lean (lean v4.22.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-lean:2025.10` |
 | LLVM IR (Clang 21.1.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-llvm-ir:2025.10` |
 | Lua (Lua 5.4.7) | `ghcr.io/malleroid/online-judge-docker/atcoder-lua:2025.10` |
