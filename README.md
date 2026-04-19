@@ -77,6 +77,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Scheme (ChezScheme 10.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-chezscheme:2025.10` |
 | Scheme (Gauche 0.9.15) | `ghcr.io/malleroid/online-judge-docker/atcoder-gauche:2025.10` |
 | Rust (rustc 1.89.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-rust:2025.10` |
+| Seed7 (Seed7 3.5.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-seed7:2025.10` |
 | SQL (DuckDB 1.3.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-sql:2025.10` |
 | Swift 6.2 | `ghcr.io/malleroid/online-judge-docker/atcoder-swift:2025.10` |
 | Tcl (tclsh 9.0.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-tcl:2025.10` |
