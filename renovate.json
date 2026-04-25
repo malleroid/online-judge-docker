@@ -14,9 +14,10 @@
       "enabled": false
     },
     {
-      "description": "Dockerfile base image digests still auto-update for security",
+      "description": "Dockerfile base image digests auto-update for security; tags stay pinned to the judge env",
       "matchFileNames": ["docker/atcoder/**/Dockerfile"],
       "matchManagers": ["dockerfile"],
+      "matchUpdateTypes": ["digest", "pinDigest"],
       "enabled": true
     }
   ]
