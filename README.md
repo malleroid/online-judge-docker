@@ -96,6 +96,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Uiua (uiua 0.16.2) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-uiua:2025.10` |
 | Unison (Unison 0.5.47) | `ghcr.io/malleroid/online-judge-docker/atcoder-unison:2025.10` |
 | V (0.4.10) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-v:2025.10` |
+| Vala (valac 0.56.18) | `ghcr.io/malleroid/online-judge-docker/atcoder-vala:2025.10` |
 | Verilog 2012 (Icarus Verilog 12.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-verilog:2025.10` |
 | Veryl (veryl 0.16.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-veryl:2025.10` |
 | Whitespace (whitespacers 1.3.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-whitespace:2025.10` |
