@@ -88,6 +88,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | SQL (DuckDB 1.3.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-sql:2025.10` |
 | Swift 6.2 | `ghcr.io/malleroid/online-judge-docker/atcoder-swift:2025.10` |
 | Tcl (tclsh 9.0.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-tcl:2025.10` |
+| Terra (Terra 1.2.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-terra:2025.10` |
 | TeX (tex 3.141592653) | `ghcr.io/malleroid/online-judge-docker/atcoder-tex:2025.10` |
 | Text (cat 9.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-text:2025.10` |
 | TypeScript 5.8 (Deno 2.4.5) | `ghcr.io/malleroid/online-judge-docker/atcoder-typescript-deno:2025.10` |
