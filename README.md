@@ -36,6 +36,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | D (LDC 1.41.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-ldc:2025.10` |
 | Dart (Dart 3.9.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-dart:2025.10` |
 | Eiffel (Gobo Eiffel 22.01) | `ghcr.io/malleroid/online-judge-docker/atcoder-gobo-eiffel:2025.10` |
+| Eiffel (Liberty Eiffel 07829e3) | `ghcr.io/malleroid/online-judge-docker/atcoder-liberty-eiffel:2025.10` |
 | Elixir (Elixir 1.18.4 (OTP 28.0.2)) | `ghcr.io/malleroid/online-judge-docker/atcoder-elixir:2025.10` |
 | Emojicode 1.0 beta 2 (emojicodec 1.0 beta 2) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-emojicode:2025.10` |
 | Erlang (Erlang 28.0.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-erlang:2025.10` |
