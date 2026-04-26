@@ -46,6 +46,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | F# 9.0 (.NET 9.0.8) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-fsharp:2025.10` |
 | Factor (Factor 0.100) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-factor:2025.10` |
 | Fish (fish 4.0.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-fish:2025.10` |
+| Fix (1.1.0-alpha.12) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-fix:2025.10` |
 | Forth (gforth 0.7.3) | `ghcr.io/malleroid/online-judge-docker/atcoder-forth:2025.10` |
 | Fortran2018 (Flang 20.1.7) | `ghcr.io/malleroid/online-judge-docker/atcoder-fortran2018-flang:2025.10` |
 | Fortran2023 (GCC 14.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-fortran2023:2025.10` |
