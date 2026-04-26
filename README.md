@@ -103,6 +103,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Vala (valac 0.56.18) | `ghcr.io/malleroid/online-judge-docker/atcoder-vala:2025.10` |
 | Verilog 2012 (Icarus Verilog 12.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-verilog:2025.10` |
 | Veryl (veryl 0.16.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-veryl:2025.10` |
+| WebAssembly (wabt 1.0.34 + iwasm 2.4.1) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-webassembly:2025.10` |
 | Whitespace (whitespacers 1.3.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-whitespace:2025.10` |
 | Zig (Zig 0.15.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-zig:2025.10` |
 
