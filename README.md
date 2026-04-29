@@ -40,6 +40,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Eiffel (Gobo Eiffel 22.01) | `ghcr.io/malleroid/online-judge-docker/atcoder-gobo-eiffel:2025.10` |
 | Eiffel (Liberty Eiffel 07829e3) | `ghcr.io/malleroid/online-judge-docker/atcoder-liberty-eiffel:2025.10` |
 | Elixir (Elixir 1.18.4 (OTP 28.0.2)) | `ghcr.io/malleroid/online-judge-docker/atcoder-elixir:2025.10` |
+| Emacs Lisp (Native Compile) (GNU Emacs 29.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-emacs-lisp:2025.10` |
 | Emojicode 1.0 beta 2 (emojicodec 1.0 beta 2) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-emojicode:2025.10` |
 | Erlang (Erlang 28.0.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-erlang:2025.10` |
 | dc 1.5.2 (GNU bc 1.08.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-dc:2025.10` |
