@@ -71,6 +71,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Lua (Lua 5.4.7) | `ghcr.io/malleroid/online-judge-docker/atcoder-lua:2025.10` |
 | Lua (LuaJIT 2.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-luajit:2025.10` |
 | Mercury (Mercury 22.01.8) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-mercury:2025.10` |
+| なでしこ (cnako3 3.7.8 (Node.js 22.19.0)) | `ghcr.io/malleroid/online-judge-docker/atcoder-nadesiko3:2025.10` |
 | Nim (Nim 1.6.20) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-nim1:2025.10` |
 | Nim (Nim 2.2.4) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-nim2:2025.10` |
 | OCaml (ocamlopt 5.3.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-ocaml:2025.10` |
