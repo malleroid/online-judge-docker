@@ -90,6 +90,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | ReasonML (reson 3.16.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-reasonml:2025.10` |
 | Ruby (ruby 3.4.5) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-ruby:2025.10` |
 | Ruby (truffleruby 25.0.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-truffleruby:2025.10` |
+| SageMath (SageMath 10.7) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-sagemath:2025.10` |
 | Scala (Dotty 3.7.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-scala:2025.10` |
 | Scala 3.7.2 (Scala Native 0.5.8) | `ghcr.io/malleroid/online-judge-docker/atcoder-scala-native:2025.10` |
 | Scheme (ChezScheme 10.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-chezscheme:2025.10` |
