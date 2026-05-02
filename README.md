@@ -13,6 +13,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | ><> (fishr 0.1.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-fishr:2025.10` |
 | A言語 (interpreter af48a2a) | `ghcr.io/malleroid/online-judge-docker/atcoder-a-language:2025.10` |
 | Ada 2022 (GNAT 15.2.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-ada:2025.10` |
+| APL (GNU APL 1.9) | `ghcr.io/malleroid/online-judge-docker/atcoder-apl:2025.10` |
 | Assembly MIPS O32 ABI (GNU assembler 2.42) | `ghcr.io/malleroid/online-judge-docker/atcoder-asm-mips:2025.10` |
 | Assembly x64 (NASM 2.16.03) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-nasm:2025.10` |
 | AWK (GNU awk 5.2.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-awk:2025.10` |
