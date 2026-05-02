@@ -84,6 +84,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Pony (ponyc 0.59.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-pony:2025.10` |
 | プロデル (mono版プロデル 2.0.1353) | `ghcr.io/malleroid/online-judge-docker/atcoder-produire:2025.10` |
 | Prolog (SWI-Prolog 9.2.9) | `ghcr.io/malleroid/online-judge-docker/atcoder-prolog:2025.10` |
+| Python (Codon 0.19.3) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-codon:2025.10` |
 | Python (PyPy 3.11-v7.3.20) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-pypy:2025.10` |
 | R (GNU R 4.5.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-r:2025.10` |
 | ReasonML (reson 3.16.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-reasonml:2025.10` |
