@@ -24,6 +24,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Brainfuck (Tritium 1.2.73) | `ghcr.io/malleroid/online-judge-docker/atcoder-brainfuck:2025.10` |
 | C# 13.0 (.NET 9.0.8) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-csharp:2025.10` |
 | C# 13.0 (.NET Native AOT 9.0.8) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-csharp-aot:2025.10` |
+| C23 (GCC 14.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-c23-gcc:2025.10` |
 | C3 (c3c 0.7.5) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-c3:2025.10` |
 | Carp (Carp 0.5.5) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-carp:2025.10` |
 | Clojure (babashka 1.12.208) | `ghcr.io/malleroid/online-judge-docker/atcoder-babashka:2025.10` |
