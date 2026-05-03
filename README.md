@@ -26,6 +26,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | C# 13.0 (.NET Native AOT 9.0.8) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-csharp-aot:2025.10` |
 | C23 (Clang 21.1.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-c23-clang:2025.10` |
 | C23 (GCC 14.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-c23-gcc:2025.10` |
+| C++ IOI-Style(GNU++20) (GCC 14.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-cpp20-ioi-gcc:2025.10` |
 | C++23 (Clang 21.1.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-cpp23-clang:2025.10` |
 | C3 (c3c 0.7.5) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-c3:2025.10` |
 | Carp (Carp 0.5.5) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-carp:2025.10` |
