@@ -31,6 +31,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | C++23 (GCC 15.2.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-cpp23-gcc:2025.10` |
 | C3 (c3c 0.7.5) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-c3:2025.10` |
 | Carp (Carp 0.5.5) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-carp:2025.10` |
+| cLay (cLay 20250308-1 (GCC 15.2.0)) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-clay:2025.10` |
 | Clojure (babashka 1.12.208) | `ghcr.io/malleroid/online-judge-docker/atcoder-babashka:2025.10` |
 | Clojure (clojure 1.12.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-clojure:2025.10` |
 | Clojure (Clojure AOT 1.12.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-clojure-aot:2025.10` |
