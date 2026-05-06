@@ -62,6 +62,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | FORTRAN77 (GCC 14.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-fortran77:2025.10` |
 | Gleam (Gleam 1.12.0 (OTP 28.0.2)) | `ghcr.io/malleroid/online-judge-docker/atcoder-gleam:2025.10` |
 | JavaScript (Bun 1.2.21) | `ghcr.io/malleroid/online-judge-docker/atcoder-bun:2025.10` |
+| Jule (jule 0.1.6) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-jule:2025.10` |
 | Julia (Julia 1.11.6) | `ghcr.io/malleroid/online-judge-docker/atcoder-julia:2025.10` |
 | JavaScript (Deno 2.4.5) | `ghcr.io/malleroid/online-judge-docker/atcoder-deno:2025.10` |
 | Go (go 1.25.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-go:2025.10` |
