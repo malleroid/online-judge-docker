@@ -35,7 +35,7 @@ jobs:
     needs: detect
     if: needs.detect.outputs.images != '[]'
     runs-on: ubuntu-latest
-    timeout-minutes: 100
+    timeout-minutes: 200
     strategy:
       fail-fast: false
       matrix:
