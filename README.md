@@ -65,6 +65,7 @@ Reproduce the exact judge environment locally so you can compile and test your s
 | Julia (Julia 1.11.6) | `ghcr.io/malleroid/online-judge-docker/atcoder-julia:2025.10` |
 | JavaScript (Deno 2.4.5) | `ghcr.io/malleroid/online-judge-docker/atcoder-deno:2025.10` |
 | Go (go 1.25.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-go:2025.10` |
+| Go 1.18 (gccgo 15.2.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-gccgo:2025.10` |
 | Haskell (GHC 9.8.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-haskell:2025.10` |
 | Haxe/JVM 4.3.7 (hxjava 4.2.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-haxe:2025.10` |
 | ISLisp (Easy-ISLisp 5.43) | `ghcr.io/malleroid/online-judge-docker/atcoder-eisl:2025.10` |
