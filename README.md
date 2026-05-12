@@ -6,195 +6,30 @@ Reproduce the exact judge environment locally so you can compile and test your s
 
 ## Supported Judges
 
-### AtCoder (2025/10)
-
-| Language | Image |
-|---|---|
-| ><> (fishr 0.1.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-fishr:2025.10` |
-| A言語 (interpreter af48a2a) | `ghcr.io/malleroid/online-judge-docker/atcoder-a-language:2025.10` |
-| Ada 2022 (GNAT 15.2.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-ada:2025.10` |
-| APL (GNU APL 1.9) | `ghcr.io/malleroid/online-judge-docker/atcoder-apl:2025.10` |
-| Assembly MIPS O32 ABI (GNU assembler 2.42) | `ghcr.io/malleroid/online-judge-docker/atcoder-asm-mips:2025.10` |
-| Assembly x64 (NASM 2.16.03) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-nasm:2025.10` |
-| AWK (GNU awk 5.2.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-awk:2025.10` |
-| BASIC (FreeBASIC 1.10.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-freebasic:2025.10` |
-| Bash (bash 5.3) | `ghcr.io/malleroid/online-judge-docker/atcoder-bash:2025.10` |
-| bc (GNU bc 1.08.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-bc:2025.10` |
-| Befunge93 (TBC 1.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-befunge93:2025.10` |
-| Brainfuck (Tritium 1.2.73) | `ghcr.io/malleroid/online-judge-docker/atcoder-brainfuck:2025.10` |
-| C# 13.0 (.NET 9.0.8) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-csharp:2025.10` |
-| C# 13.0 (.NET Native AOT 9.0.8) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-csharp-aot:2025.10` |
-| C23 (Clang 21.1.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-c23-clang:2025.10` |
-| C23 (GCC 14.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-c23-gcc:2025.10` |
-| C++ IOI-Style(GNU++20) (GCC 14.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-cpp20-ioi-gcc:2025.10` |
-| C++23 (Clang 21.1.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-cpp23-clang:2025.10` |
-| C++23 (GCC 15.2.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-cpp23-gcc:2025.10` |
-| C3 (c3c 0.7.5) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-c3:2025.10` |
-| Carp (Carp 0.5.5) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-carp:2025.10` |
-| cLay (cLay 20250308-1 (GCC 15.2.0)) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-clay:2025.10` |
-| Clojure (babashka 1.12.208) | `ghcr.io/malleroid/online-judge-docker/atcoder-babashka:2025.10` |
-| Clojure (clojure 1.12.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-clojure:2025.10` |
-| Clojure (Clojure AOT 1.12.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-clojure-aot:2025.10` |
-| Clojure (ClojureScript 1.12.42) | `ghcr.io/malleroid/online-judge-docker/atcoder-clojurescript:2025.10` |
-| COBOL (Free) (GnuCOBOL 3.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-cobol:2025.10` |
-| Common Lisp (SBCL 2.5.8) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-sbcl:2025.10` |
-| Crystal (Crystal 1.17.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-crystal:2025.10` |
-| Cyber (Cyber v0.3) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-cyber:2025.10` |
-| D (DMD 2.111.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-dmd:2025.10` |
-| D (GDC 15.2) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-gdc:2025.10` |
-| D (LDC 1.41.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-ldc:2025.10` |
-| Dart (Dart 3.9.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-dart:2025.10` |
-| ECLiPSe (ECLiPSe 7.1_13) | `ghcr.io/malleroid/online-judge-docker/atcoder-eclipse:2025.10` |
-| Eiffel (Gobo Eiffel 22.01) | `ghcr.io/malleroid/online-judge-docker/atcoder-gobo-eiffel:2025.10` |
-| Eiffel (Liberty Eiffel 07829e3) | `ghcr.io/malleroid/online-judge-docker/atcoder-liberty-eiffel:2025.10` |
-| Elixir (Elixir 1.18.4 (OTP 28.0.2)) | `ghcr.io/malleroid/online-judge-docker/atcoder-elixir:2025.10` |
-| Emacs Lisp (Native Compile) (GNU Emacs 29.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-emacs-lisp:2025.10` |
-| Emojicode 1.0 beta 2 (emojicodec 1.0 beta 2) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-emojicode:2025.10` |
-| Erlang (Erlang 28.0.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-erlang:2025.10` |
-| dc 1.5.2 (GNU bc 1.08.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-dc:2025.10` |
-| F# 9.0 (.NET 9.0.8) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-fsharp:2025.10` |
-| Factor (Factor 0.100) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-factor:2025.10` |
-| Fish (fish 4.0.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-fish:2025.10` |
-| Fix (1.1.0-alpha.12) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-fix:2025.10` |
-| Forth (gforth 0.7.3) | `ghcr.io/malleroid/online-judge-docker/atcoder-forth:2025.10` |
-| Fortran2018 (Flang 20.1.7) | `ghcr.io/malleroid/online-judge-docker/atcoder-fortran2018-flang:2025.10` |
-| Fortran2023 (GCC 14.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-fortran2023:2025.10` |
-| FORTRAN77 (GCC 14.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-fortran77:2025.10` |
-| Gleam (Gleam 1.12.0 (OTP 28.0.2)) | `ghcr.io/malleroid/online-judge-docker/atcoder-gleam:2025.10` |
-| JavaScript (Bun 1.2.21) | `ghcr.io/malleroid/online-judge-docker/atcoder-bun:2025.10` |
-| Jule (jule 0.1.6) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-jule:2025.10` |
-| Julia (Julia 1.11.6) | `ghcr.io/malleroid/online-judge-docker/atcoder-julia:2025.10` |
-| JavaScript (Deno 2.4.5) | `ghcr.io/malleroid/online-judge-docker/atcoder-deno:2025.10` |
-| Go (go 1.25.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-go:2025.10` |
-| Go 1.18 (gccgo 15.2.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-gccgo:2025.10` |
-| Haskell (GHC 9.8.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-haskell:2025.10` |
-| Haxe/JVM 4.3.7 (hxjava 4.2.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-haxe:2025.10` |
-| ISLisp (Easy-ISLisp 5.43) | `ghcr.io/malleroid/online-judge-docker/atcoder-eisl:2025.10` |
-| Java24 (OpenJDK 24.0.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-java:2025.10` |
-| JavaScript (Node.js 22.19.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-nodejs:2025.10` |
-| Koka (koka v3.2.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-koka:2025.10` |
-| Kotlin (Kotlin/JVM 2.2.10) | `ghcr.io/malleroid/online-judge-docker/atcoder-kotlin:2025.10` |
-| Kuin (kuincl v.2021.8.17) | `ghcr.io/malleroid/online-judge-docker/atcoder-kuin:2025.10` |
-| Lazy K (irori v1.0.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-lazyk:2025.10` |
-| Lean (lean v4.22.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-lean:2025.10` |
-| LLVM IR (Clang 21.1.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-llvm-ir:2025.10` |
-| Lua (Lua 5.4.7) | `ghcr.io/malleroid/online-judge-docker/atcoder-lua:2025.10` |
-| Lua (LuaJIT 2.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-luajit:2025.10` |
-| Mercury (Mercury 22.01.8) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-mercury:2025.10` |
-| なでしこ (cnako3 3.7.8 (Node.js 22.19.0)) | `ghcr.io/malleroid/online-judge-docker/atcoder-nadesiko3:2025.10` |
-| Nim (Nim 1.6.20) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-nim1:2025.10` |
-| Nim (Nim 2.2.4) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-nim2:2025.10` |
-| OCaml (ocamlopt 5.3.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-ocaml:2025.10` |
-| Octave (GNU Octave 10.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-octave:2025.10` |
-| Pascal (fpc 3.2.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-pascal:2025.10` |
-| PowerShell (PowerShell 7.5.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-powershell:2025.10` |
-| Perl (perl 5.38.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-perl:2025.10` |
-| PHP (PHP 8.4.12) | `ghcr.io/malleroid/online-judge-docker/atcoder-php:2025.10` |
-| Piet (your-diary/piet_programming_language 3.0.0) (PPM image) | `ghcr.io/malleroid/online-judge-docker/atcoder-piet:2025.10` |
-| Pony (ponyc 0.59.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-pony:2025.10` |
-| プロデル (mono版プロデル 2.0.1353) | `ghcr.io/malleroid/online-judge-docker/atcoder-produire:2025.10` |
-| Prolog (SWI-Prolog 9.2.9) | `ghcr.io/malleroid/online-judge-docker/atcoder-prolog:2025.10` |
-| Python (Codon 0.19.3) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-codon:2025.10` |
-| Python (CPython 3.13.7) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-cpython:2025.10` |
-| Python (PyPy 3.11-v7.3.20) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-pypy:2025.10` |
-| R (GNU R 4.5.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-r:2025.10` |
-| ReasonML (reson 3.16.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-reasonml:2025.10` |
-| Ruby (ruby 3.4.5) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-ruby:2025.10` |
-| Ruby (truffleruby 25.0.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-truffleruby:2025.10` |
-| SageMath (SageMath 10.7) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-sagemath:2025.10` |
-| Scala (Dotty 3.7.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-scala:2025.10` |
-| Scala 3.7.2 (Scala Native 0.5.8) | `ghcr.io/malleroid/online-judge-docker/atcoder-scala-native:2025.10` |
-| Scheme (ChezScheme 10.2.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-chezscheme:2025.10` |
-| Scheme (Gauche 0.9.15) | `ghcr.io/malleroid/online-judge-docker/atcoder-gauche:2025.10` |
-| Rust (rustc 1.89.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-rust:2025.10` |
-| Seed7 (Seed7 3.5.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-seed7:2025.10` |
-| SQL (DuckDB 1.3.2) | `ghcr.io/malleroid/online-judge-docker/atcoder-sql:2025.10` |
-| Swift 6.2 | `ghcr.io/malleroid/online-judge-docker/atcoder-swift:2025.10` |
-| Tcl (tclsh 9.0.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-tcl:2025.10` |
-| Terra (Terra 1.2.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-terra:2025.10` |
-| TeX (tex 3.141592653) | `ghcr.io/malleroid/online-judge-docker/atcoder-tex:2025.10` |
-| Text (cat 9.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-text:2025.10` |
-| TypeScript 5.8 (Deno 2.4.5) | `ghcr.io/malleroid/online-judge-docker/atcoder-typescript-deno:2025.10` |
-| TypeScript 5.9 (tsc 5.9.2 (Bun 1.2.21)) | `ghcr.io/malleroid/online-judge-docker/atcoder-typescript-bun:2025.10` |
-| TypeScript 5.9 (tsc 5.9.2 (Node.js 22.19.0)) | `ghcr.io/malleroid/online-judge-docker/atcoder-typescript-nodejs:2025.10` |
-| Uiua (uiua 0.16.2) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-uiua:2025.10` |
-| Unison (Unison 0.5.47) | `ghcr.io/malleroid/online-judge-docker/atcoder-unison:2025.10` |
-| V (0.4.10) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-v:2025.10` |
-| Vala (valac 0.56.18) | `ghcr.io/malleroid/online-judge-docker/atcoder-vala:2025.10` |
-| Verilog 2012 (Icarus Verilog 12.0) | `ghcr.io/malleroid/online-judge-docker/atcoder-verilog:2025.10` |
-| Veryl (veryl 0.16.4) | `ghcr.io/malleroid/online-judge-docker/atcoder-veryl:2025.10` |
-| WebAssembly (wabt 1.0.34 + iwasm 2.4.1) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-webassembly:2025.10` |
-| Whitespace (whitespacers 1.3.0) \* | `ghcr.io/malleroid/online-judge-docker/atcoder-whitespace:2025.10` |
-| Zig (Zig 0.15.1) | `ghcr.io/malleroid/online-judge-docker/atcoder-zig:2025.10` |
-
-> \* amd64 only. Build/run with `--platform linux/amd64`.
-
-> More languages coming soon (C++, Python, PyPy, Ruby, ...).
+- [AtCoder (2025/10)](docs/atcoder.md) — 116 languages
 
 ## Usage
 
-Add a `compose.yaml` to your solutions repository:
+Add a `compose.yaml` to your solutions repository, listing the languages you want. The service name is arbitrary; the `image` tag comes from the per-judge documentation linked above; mount your source file into `/judge`:
 
 ```yaml
 services:
-  go:
-    image: ghcr.io/malleroid/online-judge-docker/atcoder-go:2025.10
+  <service-name>:
+    image: ghcr.io/malleroid/online-judge-docker/<image>:<judge-version>
     volumes:
-      - ./main.go:/judge/main.go
+      - ./<source>:/judge/<source>
     working_dir: /judge
-  rust:
-    image: ghcr.io/malleroid/online-judge-docker/atcoder-rust:2025.10
-    volumes:
-      - ./main.rs:/judge/src/main.rs
-    working_dir: /judge
+    # Required for amd64-only images (marked `*` in the per-judge table)
+    # platform: linux/amd64
 ```
 
-```bash
-# Go
-docker compose run --rm go go build -o a.out && docker compose run --rm go ./a.out
-
-# Rust
-docker compose run --rm rust cargo build --release --quiet --offline
-docker compose run --rm rust ./target/release/main < input.txt
-```
-
-### Zig notes
-
-- 4 libraries pre-installed (ac-library-zig, proconio-zig, zig-string, mvzr)
-- Build with `zig build --release -Doptimize=ReleaseFast`, output at `zig-out/bin/judge`
-- `build.zig` and `build.zig.zon` are pre-configured in `/judge`
-
-### Bun notes
-
-- 6 npm libraries pre-installed (ac-library-js, data-structure-typed, immutable, lodash, mathjs, tstl)
-- No compile step; runs directly with `bun Main.js --no-install`
-
-### Deno notes
-
-- 41 Deno standard library packages (@std/*) and 6 npm libraries pre-installed
-- `deno.sh` wrapper script limits V8 stack size and passes `ONLINE_JUDGE ATCODER` args
-
-### Node.js notes
-
-- 6 npm libraries pre-installed globally (ac-library-js, data-structure-typed, immutable, lodash, mathjs, tstl)
-- `node.sh` wrapper script limits stack size based on problem memory limit
-
-### Go notes
-
-- 6 libraries pre-installed (gods, gonum, gostl, immutable, x/exp, ac-library-go)
-- `go.mod` and `go.sum` are pre-configured in `/judge`
-
-### Rust notes
-
-- All 67 official crates are pre-built in the image (proconio, itertools, etc.)
-- `--offline` works because all dependencies are pre-compiled
-- `#[cfg(atcoder)]` is enabled via `.cargo/config.toml`
+Then `docker compose run --rm <service-name> <command>` to compile/run. The compile/run command for each image matches the upstream judge's language manifest verbatim — refer to the per-judge documentation for the manifest URL.
 
 ## Architecture
 
-Most images are multi-arch (`linux/amd64` + `linux/arm64`). Images marked with `*` in the table above are amd64 only — typically because upstream only ships x86_64 binaries or the implementation has architecture-specific code paths.
+Most images are multi-arch (`linux/amd64` + `linux/arm64`). Images marked with `*` in each judge's table are amd64 only — typically because upstream only ships x86_64 binaries or the implementation has architecture-specific code paths.
 
-The AtCoder judge runs on x86_64. The arm64 variant (where available) is provided for local development convenience on Apple Silicon Macs.
+Judges themselves run on amd64 hardware. The arm64 variant (where available) is provided for local development convenience on Apple Silicon Macs.
 
 ## License
 
