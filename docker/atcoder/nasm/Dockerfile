@@ -1,7 +1,7 @@
 FROM ubuntu:24.04@sha256:c4a8d5503dfb2a3eb8ab5f807da5bc69a85730fb49b5cfca2330194ebcc41c7b
 
 # NASM 2.16.03 produces x86_64 ELF binaries; arm64 hosts cannot execute the output natively.
-# Build/run with: docker build --platform linux/amd64 / docker run --platform linux/amd64
+# platforms: linux/amd64
 
 ARG NASM_VERSION=2.16.03
 ARG NASM_SHA256=1412a1c760bbd05db026b6c0d1657affd6631cd0a63cddb6f73cc6d4aa616148

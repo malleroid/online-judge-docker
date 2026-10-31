@@ -5,7 +5,7 @@ ARG CYBER_SHA256=24343c64e6c249fc2c081d11d959ad0e1db612f534e0a891c96db6111d9a3e1
 
 # Cyber 0.3 only publishes an x86_64 Linux release asset (cyber-linux-x64.tar.gz)
 # and its source build pins a specific Zig toolchain; no arm64 binary is available.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 WORKDIR /judge
 

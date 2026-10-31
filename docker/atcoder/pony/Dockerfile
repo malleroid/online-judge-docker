@@ -9,7 +9,7 @@ ARG CORRAL_SHA256=270845acbb0da1c792dbf7782824966b2f96d3390ee12e630bb2b44047e5fa
 # ponyc 0.59.0 ships Linux pre-built binaries only for x86_64; the arm64
 # Linux asset first appeared in 0.63.0. The TOML pins
 # `ponyup default x86_64-linux-ubuntu24.04`, so this image is amd64 only.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 #
 # The TOML installs ponyc/corral via `ponyup` (Cloudsmith backend). Cloudsmith
 # ages out older versions (roughly the last 10 per target), and 0.59.0 has

@@ -4,7 +4,7 @@ ARG CRYSTAL_VERSION=1.17.0
 ARG CRYSTAL_SHA256=9fa1c66cf10ecaf221a1dcbcefa76d564da1653cb5bc4606a2d5143aa4da8ad0
 
 # Crystal 1.17 only provides x86_64 Linux binaries; no arm64 support
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 WORKDIR /judge
 

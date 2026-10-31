@@ -1,7 +1,7 @@
 FROM ubuntu:24.04@sha256:c4a8d5503dfb2a3eb8ab5f807da5bc69a85730fb49b5cfca2330194ebcc41c7b
 
 # Emojicode 1.0-beta.2 only provides an x86_64 Linux prebuilt binary; arm64 is not supported upstream.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 ARG EMOJICODE_VERSION=1.0-beta.2
 ARG EMOJICODE_SHA256=c2e4a8ec156c198a80d844e747ce71c9d34efd54a2c5f3b6a116470d0cb8ef0f

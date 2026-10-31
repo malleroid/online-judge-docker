@@ -21,7 +21,7 @@ ARG Z3_VERSION=4.15.2
 # `SCIPOptSuite-9.2.3-Linux-ubuntu24.sh` (amd64-only binary
 # installer). arm64 would require building libtorch and SCIP from
 # source — well outside the scope of "reproduce the judge env".
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 #
 # The TOML uses `gh_download_latest` (GitHub API "latest") for many
 # libraries, which defeats reproducibility. We pin every version to

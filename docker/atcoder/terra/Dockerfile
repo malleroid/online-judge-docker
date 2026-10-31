@@ -8,7 +8,7 @@ ARG TERRA_SHA256=e897269e57e3a77e1ad773e38ca39db994976488bde0e9e4359ef5c23a521e5
 # release asset is built against LLVM 11 (different LLVM major), so
 # pulling it would diverge from the AtCoder judge env. The TOML pins
 # `terra-Linux-x86_64-cc543db-llvm16.tar.xz` explicitly.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 WORKDIR /judge
 

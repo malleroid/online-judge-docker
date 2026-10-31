@@ -6,7 +6,7 @@ ARG EIGEN_VERSION=3.4.0
 ARG ACL_VERSION=1.5.1
 
 # choosenim and Nim binaries are x86_64 only; no arm64 support
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 ENV HOME=/root
 ENV DEBIAN_FRONTEND=noninteractive

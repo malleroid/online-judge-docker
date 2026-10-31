@@ -13,7 +13,7 @@ ARG NUMBA_SHA256=8750ee147940a6637b80ecf7f95062185ad8726c8c28a2295b8ec1160a196f7
 # target amd64. arm64 would require regenerating BOLT runtimes, falling
 # back to a different torch index, and rebuilding cppyy/cling from
 # sdist — well beyond reproducing the judge env.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 WORKDIR /judge
 

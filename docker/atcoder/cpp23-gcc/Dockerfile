@@ -18,8 +18,8 @@ ARG Z3_VERSION=4.15.2
 # `libtorch-shared-with-deps-2.8.0+cpu.zip`, whose precompiled .so
 # files only ship for x86_64. Building libtorch for arm64 from source
 # would balloon the build time; outside the scope of "reproduce the
-# judge env". Build with:
-#   docker build --platform linux/amd64
+# judge env".
+# platforms: linux/amd64
 
 ENV AC_INSTALL_DIR=/opt/atcoder/gcc
 ENV PATH=/opt/atcoder/gcc/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin

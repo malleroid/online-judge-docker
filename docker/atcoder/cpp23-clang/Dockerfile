@@ -17,8 +17,8 @@ ARG Z3_VERSION=4.15.2
 # cxxflags and `-Wl,-R::install_dir::/lib/x86_64-unknown-linux-gnu`
 # throughout the compile path. AtCoder's judge runs amd64 only, and
 # arm64 would require rewriting all those paths plus rebuilding 11
-# libraries against a different target triple. Build with:
-#   docker build --platform linux/amd64
+# libraries against a different target triple.
+# platforms: linux/amd64
 
 ENV AC_INSTALL_DIR=/opt/atcoder/clang
 ENV PATH=/opt/atcoder/clang/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin

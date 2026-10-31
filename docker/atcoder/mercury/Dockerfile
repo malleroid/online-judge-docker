@@ -8,7 +8,7 @@ ARG MERCURY_DEB_VERSION=22.01.8-1~noble
 # ships Mercury 22.01.8 as a binary, so this image is amd64 only.
 # Building from source is a 30-minute to 2-hour multi-stage bootstrap
 # which would also diverge from the judge's apt-pinned grade layout.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 WORKDIR /judge
 

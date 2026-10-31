@@ -5,7 +5,7 @@ ARG UIUA_SHA256=2425bb7428d82bb11314621f0d19e89d8fe957aa72cd7cd142043f5c4fb8471b
 
 # Uiua 0.16.2 only publishes an x86_64 Linux binary (the -no-audio variant used
 # by the AtCoder TOML); no aarch64 Linux release asset exists upstream.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 WORKDIR /judge
 

@@ -8,8 +8,8 @@ ARG AC_LIBRARY_PYTHON_REF=27fdbb71cd0d566bdeb12746db59c9d908c6b5d5
 
 # The AtCoder TOML hardcodes `codon-linux-x86_64.tar.gz` and the
 # pinned scientific Python wheels (numpy / scipy / scikit-learn /
-# pandas / torch+cpu) target manylinux2014_x86_64. Build with:
-#   docker build --platform linux/amd64
+# pandas / torch+cpu) target manylinux2014_x86_64.
+# platforms: linux/amd64
 
 ENV CODON_PYTHON=/usr/local/lib/libpython3.13.so
 

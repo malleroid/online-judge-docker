@@ -8,7 +8,7 @@ ARG WAMR_SHA256=f36650ef534f8bc138ed38385d46cfa5d053fb5696f799a9c783b62418ba726b
 # (no arm64 packages exist) and the WAMR upstream prebuilt only ships
 # x86_64 binaries. The TOML install pulls both 32-bit dev packages
 # unconditionally, so this image is amd64 only.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 RUN test "${TARGETARCH}" = "amd64" || { echo "WebAssembly image is amd64-only"; exit 1; }
 
 WORKDIR /judge

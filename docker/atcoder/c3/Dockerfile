@@ -7,7 +7,7 @@ ARG C3C_SHA256=7120f11053342a861931459a692039be4cdc8429f336a54f415517193884b29e
 # release exposes Linux assets only as `c3-linux.tar.gz` and
 # `c3-ubuntu-22.tar.gz`. There's no aarch64 Linux build, so this image
 # is amd64 only.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 WORKDIR /judge
 

@@ -4,7 +4,7 @@ ARG HAXE_VERSION=4.3.7
 ARG NEKO_VERSION=2-4-1
 
 # Haxe linux64 binary is x86_64 only; no arm64 support
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV HOME=/root
