@@ -20,8 +20,8 @@ ARG Z3_VERSION=4.15.2
 # AtCoder's judge runs amd64 only. The TOML pulls
 # `jule-linux-amd64.zip` (x86_64-only), `libtorch-shared-with-deps-
 # 2.8.0+cpu.zip` (x86_64-only), and `SCIPOptSuite-9.2.3-Linux-ubuntu24.sh`
-# (amd64-only binary installer). Build with:
-#   docker build --platform linux/amd64
+# (amd64-only binary installer).
+# platforms: linux/amd64
 #
 # The TOML uses `gh_download_latest` (GitHub API "latest") for many
 # libraries. We pin every version to the values current at the AtCoder

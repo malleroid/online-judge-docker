@@ -4,7 +4,7 @@ ARG GDC_VERSION=15
 ARG MIR_VERSION=3.2.3
 
 # dub binary from GitHub is x86_64 only
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 ENV HOME=/root
 

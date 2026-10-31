@@ -3,7 +3,7 @@ FROM ubuntu:24.04@sha256:c4a8d5503dfb2a3eb8ab5f807da5bc69a85730fb49b5cfca2330194
 # whitespace-rs 1.3.0 has no aarch64 JIT backend; `main.rs` unconditionally calls
 # `jit_aot()` and aarch64 builds fail at compile time. amd64-only (same precedent
 # as Crystal/NASM).
-# Build/run with: docker build --platform linux/amd64 / docker run --platform linux/amd64
+# platforms: linux/amd64
 
 ARG WHITESPACERS_COMMIT=5e496ec7c2a56569f9169471519b5071b4e6444b
 

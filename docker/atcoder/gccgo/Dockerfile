@@ -4,7 +4,8 @@ ARG GCC_MAJOR=15
 
 # AtCoder's judge runs amd64 only. The PPA `puni070/gcc-noble` only
 # publishes amd64 binaries — arm64 builds aren't part of its build
-# matrix. Build with: docker build --platform linux/amd64
+# matrix.
+# platforms: linux/amd64
 
 WORKDIR /judge
 

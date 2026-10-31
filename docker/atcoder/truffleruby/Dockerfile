@@ -8,7 +8,7 @@ ARG AC_LIBTORCH_SHA256=8dea5bcfed4b53ca0f6852517bea4b4d1f3ff1cc0c21da662e834d34a
 # libtorch 2.8.0 CPU is amd64-only — upstream
 # (https://download.pytorch.org/libtorch/cpu/) does not publish an
 # aarch64 archive, so the `torch-rb` gem can only build against amd64.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 ENV HOME=/root
 ENV PATH=/root/.rubies/truffleruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 

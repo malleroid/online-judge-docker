@@ -4,7 +4,7 @@ ARG CARP_VERSION=0.5.5
 ARG CARP_SHA256=886f6de92e75a06612474602ef6022609e51696465217abe5947296721448e69
 
 # Carp 0.5.5 only provides x86_64 Linux binaries; no arm64 support
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 WORKDIR /judge
 

@@ -6,7 +6,7 @@ ARG FIX_SHA256=b3e96ecd22e0b8356fd2dbf71254adcd831de51eee0b4913d228fd7735f9354b
 # Fix v1.1.0-alpha.12 only ships an x86_64-unknown-linux-gnu prebuilt
 # binary; no aarch64 Linux release asset exists upstream. AtCoder's
 # judge runs on amd64.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 WORKDIR /judge
 

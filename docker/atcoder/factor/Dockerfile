@@ -4,7 +4,8 @@ ARG FACTOR_VERSION=0.100
 ARG FACTOR_SHA256=c66be5e2f2547235b73da648b3e569af1b47699b4d3ead28b83f01d22bfaa006
 
 # Factor 0.100 only provides x86_64 Linux prebuilt binaries; release notes state
-# ARM64 support is incomplete. Build with: docker build --platform linux/amd64
+# ARM64 support is incomplete.
+# platforms: linux/amd64
 # Upstream GitHub Release tarball is used (byte-for-byte identical to
 # downloads.factorcode.org, but served over HTTPS with a stable sha256 pin).
 

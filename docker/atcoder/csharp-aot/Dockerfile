@@ -3,7 +3,7 @@ FROM ubuntu:24.04@sha256:c4a8d5503dfb2a3eb8ab5f807da5bc69a85730fb49b5cfca2330194
 ARG DOTNET_SDK_VERSION=9.0.304
 
 # RuntimeIdentifier=linux-x64 is hardcoded in csproj; amd64 only
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 ENV HOME=/root
 ENV DOTNET_ROOT="${HOME}/.dotnet"

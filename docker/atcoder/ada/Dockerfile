@@ -16,7 +16,7 @@ ARG GNATCOLL_GMP_CONSTRAINT=^25.0.0
 
 # Alire publishes `alr` as an x86_64-only Linux binary, and the AtCoder TOML
 # sources gnat-15 from a PPA (puni070/gcc-noble) that only builds for amd64.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 ENV HOME=/root
 

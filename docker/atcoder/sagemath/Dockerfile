@@ -9,7 +9,7 @@ ARG SAGE_VERSION=10.7
 # is therefore the only path. Multi-arch is technically supported by
 # upstream, but the build is hour-scale on amd64 native and would balloon
 # under arm64 emulation, so the image is amd64-only.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 ENV HOME=/root
 

@@ -9,7 +9,7 @@ ARG AC_LIBRARY_PYTHON_REF=27fdbb71cd0d566bdeb12746db59c9d908c6b5d5
 # many of the pinned PyPy pip wheels (numpy / scipy / scikit-learn /
 # pandas) are amd64-only — arm64 would fall back to sdist builds for
 # most of the science stack plus cppyy's bundled cling fetch.
-# Build with: docker build --platform linux/amd64
+# platforms: linux/amd64
 
 WORKDIR /judge
 
