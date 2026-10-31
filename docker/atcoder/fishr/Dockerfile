@@ -1,5 +1,7 @@
 FROM ubuntu:24.04@sha256:c4a8d5503dfb2a3eb8ab5f807da5bc69a85730fb49b5cfca2330194ebcc41c7b
 
+ARG FISHR_SHA=c86262b5e233815ece7a44c7810817f738c6c7d3
+
 WORKDIR /judge
 
 # Install build dependencies
@@ -14,11 +16,14 @@ RUN apt-get update \
         rustc \
     && rm -rf /var/lib/apt/lists/*
 
-# Build and install fishr from upstream HEAD
-# TOML pins no commit and no version, so we follow the same policy (CLAUDE.md:
-# "upstream に tag なし、patch なし、TOML も pin してない → HEAD clone").
+# Build and install fishr
+# The TOML clones HEAD with no commit or version pin. Upstream HEAD later
+# moved to Rust edition 2024, which Ubuntu 24.04's cargo 1.75 cannot build,
+# so we pin to the SHA current at 2025-10-18 (AtCoder 2025/10 announcement
+# date), matching clay / jule.
 RUN git clone https://github.com/noirotm/fishr /tmp/fishr \
     && cd /tmp/fishr \
+    && git checkout "${FISHR_SHA}" \
     && cargo build --release \
     && cp target/release/fishr /usr/local/bin/fishr \
     && rm -rf /tmp/fishr /root/.cargo
