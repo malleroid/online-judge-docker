@@ -56,6 +56,13 @@ RUN cd /tmp \
 # suite + gmp-fix). Versions are pinned with `=X.Y.Z` exactly as the
 # TOML lists them. The registry fetch happens once here and is
 # committed into the image so judge-time `fix build` runs offline.
+#
+# Deviation from the TOML order: `ring-buffer@=0.1.1` comes before
+# `cp-library@=0.6.6`. The resolver handles arguments in order and picks
+# the newest match for cp-library's `ring-buffer@^0.1.0`; since
+# ring-buffer 0.1.2 (2026-04-30) it takes 0.1.2, then fails on `=0.1.1`
+# without retrying. Resolving `=0.1.1` first gives the same versions the
+# TOML produced in 2025-10.
 RUN cd /judge \
     && fix init \
     && fix deps add \
@@ -69,8 +76,8 @@ RUN cd /judge \
         time@=1.0.2 \
         binary-heap@=0.1.2 \
         bool-array@=0.1.1 \
-        cp-library@=0.6.6 \
         ring-buffer@=0.1.1 \
+        cp-library@=0.6.6 \
         gmp-fix@=0.6.0 \
         minilib-common@=0.6.1 \
         minilib-text@=0.5.2 \
