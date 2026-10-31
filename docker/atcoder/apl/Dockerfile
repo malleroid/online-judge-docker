@@ -32,7 +32,7 @@ RUN apt-get update \
 # stay split into two RUN layers to mirror the TOML's separation.
 RUN cd /tmp \
     && wget -q -O "apl-${APL_VERSION}.tar.gz" \
-        "https://ftp.gnu.org/gnu/apl/apl-${APL_VERSION}.tar.gz" \
+        "https://ftp.gnu.org/gnu/apl/apl-${APL_VERSION}/apl-${APL_VERSION}.tar.gz" \
     && echo "${APL_SHA256}  apl-${APL_VERSION}.tar.gz" | sha256sum -c - \
     && tar xzf "apl-${APL_VERSION}.tar.gz" \
     && rm "apl-${APL_VERSION}.tar.gz"
