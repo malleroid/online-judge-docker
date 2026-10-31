@@ -5,8 +5,8 @@ FROM ubuntu:24.04@sha256:c4a8d5503dfb2a3eb8ab5f807da5bc69a85730fb49b5cfca2330194
 
 ARG EMOJICODE_VERSION=1.0-beta.2
 ARG EMOJICODE_SHA256=c2e4a8ec156c198a80d844e747ce71c9d34efd54a2c5f3b6a116470d0cb8ef0f
-ARG LIBTINFO5_VERSION=6.3-2ubuntu0.1
-ARG LIBTINFO5_SHA256=ab89265d8dd18bda6a29d7c796367d6d9f22a39a8fa83589577321e7caf3857b
+ARG LIBTINFO5_VERSION=6.3-2
+ARG LIBTINFO5_SHA256=d2597b5aec92a930cf549e1b429ad892595813e72ec7814685ea146a9fb715e5
 
 WORKDIR /judge
 
@@ -18,10 +18,11 @@ RUN apt-get update \
         wget \
     && rm -rf /var/lib/apt/lists/*
 
-# libtinfo5 is no longer provided by Ubuntu 24.04; pull the Jammy-era .deb from security.ubuntu.com
+# libtinfo5 is no longer provided by Ubuntu 24.04; pull the Jammy release .deb from archive.ubuntu.com
 # and verify it against a pinned sha256 before installing with apt (to resolve transitive deps).
+# Security updates drop from the pool once superseded; the release version stays.
 RUN cd /tmp \
-    && wget -q -O libtinfo5.deb "http://security.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_${LIBTINFO5_VERSION}_amd64.deb" \
+    && wget -q -O libtinfo5.deb "http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_${LIBTINFO5_VERSION}_amd64.deb" \
     && echo "${LIBTINFO5_SHA256}  libtinfo5.deb" | sha256sum -c - \
     && apt-get update \
     && apt-get install -y --no-install-recommends ./libtinfo5.deb \
